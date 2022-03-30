@@ -1,0 +1,16 @@
+<%- include ("partial/header.ejs") %>
+
+<%- include ("partial/nav.ejs") %>
+</header>
+
+<body>
+    <main>
+        <ul>
+            <% for(let boisson of listBoisson){ %>
+                <li> <%= `Du ${boisson.name} pour la somme de : ${boisson.prix}e` %> </li>
+            <% } %>
+        </ul>
+    </main>
+</body>
+
+<%- include ("partial/footer.ejs") %>

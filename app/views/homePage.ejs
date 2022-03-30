@@ -1,28 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title> <%= titre %> </title>
-</head>
-<body>
-    <header>
-        <div class="header">
-            <div class="header__title">
-                <h1> <%= titre %> </h1>
-            </div>
-            <div class="header__nav">
-                <nav class="header__nav-menu">
-                    <a class="header__nav-link" href="#">page1</a>
-                    <a class="header__nav-link" href="#">page2</a>
-                    <a class="header__nav-link" href="#">page3</a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<%- include ("partial/header.ejs") %>
+
+<%- include ("partial/nav.ejs") %>
+</header>
 
     <main>
         <div class="main">
@@ -30,21 +9,15 @@
                 <article class="main__section-article">
                     <h2 class="main__section-article-title">Page n°2</h2>
                     <p class="main__section-article-para">La page numero 2</p>
-                    <a class="main__section-article-link" href="#">page2</a>
+                    <a class="main__section-article-link" href="http://localhost:8080/page2">page2</a>
                 </article>
                 <article class="main__section-article">
                     <h2 class="main__section-article-title">Page n°3</h2>
                     <p class="main__section-article-para">La page numero 3</p>
-                    <a class="main__section-article-link" href="#">page3</a>
+                    <a class="main__section-article-link" href="http://localhost:8080/page3">page3</a>
                 </article>
             </section>
         </div>
     </main>
 
-    <footer>
-        <div class="footer">
-            <p class="footer__title">fin</p>
-        </div>
-    </footer>
-</body>
-</html>
+<%- include ("partial/footer.ejs") %> 
