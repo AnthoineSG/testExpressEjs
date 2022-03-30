@@ -1,0 +1,17 @@
+{
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "camelcase": "error",
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"],
+        "no-var": "error",
+        "indent": ["error", 4]
+
+    },
+    "env": {
+        "browser": true
+    }
+}
